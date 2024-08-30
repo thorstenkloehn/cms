@@ -11,7 +11,7 @@ git clone https://github.com/thorstenkloehn/cms.git
 cd cms
 code .
 python3.12 -m venv .venv
-source venv/bin/activate
+source .venv/bin/activate
 pip install -r requirements.in
 ```
 ### Konfigurieren Datei .env
