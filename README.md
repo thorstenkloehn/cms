@@ -7,9 +7,12 @@ In diesem Tutorial erfahren Sie, wie Sie CMS Django auf Ihrem Server installiere
 ### Installieren von CMS Django
 
 ```bash
+git clone https://github.com/thorstenkloehn/cms.git
+cd cms
 python3.12 -m venv venv
 source venv/bin/activate
 pip install django-cms 
+pip install -r requirements.txt
 ```
 ### Konfigurieren Datei .env
 
@@ -27,4 +30,10 @@ DATABASE_HOST=your_database_host
 DATABASE_PORT=your_database_port
 DEBUG=True
 ALLOWED_HOSTS=your_domain.com
+```
+Speichern und schließen Sie die Datei.
+```
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
 ```
