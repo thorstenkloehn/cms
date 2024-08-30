@@ -1,0 +1,10 @@
+.idea/
+.env
+.venv
+start/__pycache__/
+*.pyc
+*.pyo
+world/__pycache__
+*.sqlite3
+world/migrations/
+__pycache__
